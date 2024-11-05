@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Pokémon Research Site">
+    <title>Sinjoh Ruins</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading">Navigation</a>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="/index.html" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="/battlehall.html" class="pure-menu-link">Battle Hall Fans</a></li>
+                <li class="pure-menu-item"><a href="/towerglitch.html" class="pure-menu-link">Battle Tower Glitch</a></li>
+                <li class="pure-menu-item"><a href="/hatching.html" class="pure-menu-link">Egg Hatching</a></li>
+                <li class="pure-menu-item"><a href="/timerbug.html" class="pure-menu-link">Timer Bug</a></li>
+                <li class="pure-menu-item menu-item-divided pure-menu-selected"><a href="/softboiled.html" class="pure-menu-link">Softboiled Glitch</a></li>
+                <li class="pure-menu-item"><a href="/platrival.html" class="pure-menu-link">Unused Plat Rival</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <h1>Sinjoh Ruins</h1>
+            <h2>A Pokémon Research Site</h2>
+        </div>
+
+        <div class="content">
+            <h2 class="content-subhead">Softboiled Glitch</h2>
+            <p>This is a glitch that exists in Pokémon Diamond, Pearl, and Platinum. By using Softboiled or Milk Drink on an injured Pokemon, then performing a frame perfect directional input immediately after pressing A, you can heal something you shouldn't be able to. This lets you:</p>
+            <ul>
+            <li>Revive a fainted Pokémon (normally not possible)</li>
+            <li>Overheal a Pokémon (basically cosmetic, as it gets fixed when the Pokémon takes damage in battle)</li>
+            <li>Heal an egg</li>
+            <li>Crash the game by trying to heal the Back button</li>
+            </ul>
+            <p>Sometimes while overhealing a Pokémon the game will enter a seemingly endless heal loop that prevents you from doing any inputs. This is caused by an HP overflow.</p>
+            <img class="pure-img-responsive" src="/imgs/overflow.png" alt="CasualPokePlayer: so say you overflowed your HP by 1, it will try to heal 65535 HP">
+            
+            <p>RETIRE investigated why the glitch happens and found the cause:</p>
+            <img class="pure-img-responsive" src="/imgs/softboiled-explanation.png" alt="RETIRE: Except they did break. The issue is they had a switch case inside a switch case. Case 0 handles the initial selection. If you press A, it then has another switch case to check the state of the pokémon, and it breaks out of that one, but not the outer switch case so then it also ends up going through the check for holding a different button to select a different pokémon">
+            <p>Thanks to <a href="https://twitter.com/RETIREglitch">RETIRE</a> and CasualPokePlayer for looking into it.</p>
+            <p>Thank you to YouTube commenter @nazberry6281 for bringing this to my attention!</p>
+        </div>
+    </div>
+</div>
+
+<script src="/js/ui.js"></script>
+
+</body>
+</html>
