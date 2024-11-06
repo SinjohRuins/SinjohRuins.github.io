@@ -48,7 +48,7 @@
             <li>Crash the game by trying to heal the Back button</li>
             </ul>
             <p>Sometimes while overhealing a Pokémon the game will enter a seemingly endless heal loop that prevents you from doing any inputs. This is caused by an HP overflow.</p>
-            <img class="pure-img-responsive" src="/imgs/overflow.png" alt="CasualPokePlayer: so say you overflowed your HP by 1, it will try to heal 65535 HP">
+            <img class="pure-img-responsive" src="/imgs/overflow.png" alt="CasualPokePlayer: so say you overflowed your HP by 1, it will try to heal 65535 HP. it will eventually heal it (in around 73 minutes)">
             
             <p>RETIRE investigated why the glitch happens and found the cause:</p>
             <img class="pure-img-responsive" src="/imgs/softboiled-explanation.png" alt="RETIRE: Except they did break. The issue is they had a switch case inside a switch case. Case 0 handles the initial selection. If you press A, it then has another switch case to check the state of the pokémon, and it breaks out of that one, but not the outer switch case so then it also ends up going through the check for holding a different button to select a different pokémon">
