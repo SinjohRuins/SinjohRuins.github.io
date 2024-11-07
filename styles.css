@@ -1,9 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans+SC:wght@100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
-
 body {
-    color: #000000;
-    font-family: "EB Garamond";
-    font-size: 18px;
+    color: #333;
 }
 
 .pure-img-responsive {
