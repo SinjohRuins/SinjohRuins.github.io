@@ -42,21 +42,21 @@
 
         <div class="content">
             <h2 class="content-subhead">Softboiled Glitch</h2>
-            <p>This is a glitch that exists in Pokémon Diamond, Pearl, and Platinum. By using Softboiled or Milk Drink on an injured Pokemon, then performing a frame perfect directional input immediately after pressing A, you can heal something you shouldn't be able to. This lets you:</p>
+            <p>The softboiled glitch in Pokémon Diamond, Pearl, and Platinum inbolbrd using Softboiled or Milk Drink on an injured Pokemon, then performing a frame perfect directional input immediately after pressing A. This action allows you to perform one of the following actions, all centered on healing something you otherwise would not be able to:</p>
             <ul>
             <li>Revive a fainted Pokémon (normally not possible)</li>
             <li>Overheal a Pokémon (basically cosmetic, as it gets fixed when the Pokémon takes damage in battle)</li>
             <li>Heal an egg</li>
             <li>Crash the game by trying to heal the Back button</li>
             </ul>
-            <p>Sometimes while overhealing a Pokémon the game will enter a seemingly endless heal loop that prevents you from doing any inputs. This is caused by an HP overflow.</p>
+            <p>While overhealing a Pokémon, sometimes the game will cause an HP overflow, entering you into a seemingly endless heal loop that prevents you from performing any inputs.</p>
             <img class="pure-img-responsive" src="/imgs/overflow.PNG" alt="CasualPokePlayer: so say you overflowed your HP by 1, it will try to heal 65535 HP. it will eventually heal it (in around 73 minutes)" title="CasualPokePlayer: so say you overflowed your HP by 1, it will try to heal 65535 HP. it will eventually heal it (in around 73 minutes)">
             <blockquote>CasualPokePlayer: so say you overflowed your HP by 1, it will try to heal 65535 HP. it will eventually heal it (in around 73 minutes)</blockquote>
-            <p>RETIRE investigated why the glitch happens and found the cause:</p>
+            <p>RETIRE found the cause of this glitch:</p>
             <img class="pure-img-responsive" src="/imgs/softboiled-explanation.PNG" alt="RETIRE: Except they did break. The issue is they had a switch case inside a switch case. Case 0 handles the initial selection. If you press A, it then has another switch case to check the state of the pokémon, and it breaks out of that one, but not the outer switch case so then it also ends up going through the check for holding a different button to select a different pokémon. so this is frameperfect" title="RETIRE: Except they did break. The issue is they had a switch case inside a switch case. Case 0 handles the initial selection. If you press A, it then has another switch case to check the state of the pokémon, and it breaks out of that one, but not the outer switch case so then it also ends up going through the check for holding a different button to select a different pokémon. so this is frameperfect">
             <blockquote>RETIRE: Except they did break. The issue is they had a switch case inside a switch case. Case 0 handles the initial selection. If you press A, it then has another switch case to check the state of the pokémon, and it breaks out of that one, but not the outer switch case so then it also ends up going through the check for holding a different button to select a different pokémon. so this is frameperfect</blockquote>
-            <p>Thanks to <a href="https://twitter.com/RETIREglitch">RETIRE</a> and CasualPokePlayer for looking into it.</p>
-            <p>Thank you to YouTube commenter @nazberry6281 for bringing this to my attention!</p>
+            <p>Thanks to <a href="https://twitter.com/RETIREglitch">RETIRE</a> and CasualPokePlayer for your investigations</p>
+            <p>Thank you also to YouTube commenter @nazberry6281 for bringing this to my attention!</p>
         </div>
     </div>
 </div>
