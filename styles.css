@@ -7,6 +7,12 @@ body {
     height: auto;
 }
 
+blockquote {
+    border-left: 6px solid #DADADA;
+    padding-left: 1rem;
+    margin-left: 0;
+}
+
 /*
 Add transition to containers so they can push in and out.
 */
