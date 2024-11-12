@@ -82,7 +82,16 @@ The content `<div>` is where all your content goes.
     color: #333;
 }
 
-
+.column {
+    float: left;
+    width: 33.33%;
+    font-size:24px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
