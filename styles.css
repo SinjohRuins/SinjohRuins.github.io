@@ -84,8 +84,11 @@ The content `<div>` is where all your content goes.
 
 .column {
     float: left;
-    width: 33.33%;
+    width: 40%;
     font-size:24px;
+}
+.row {
+    height: 50px;
 }
 .row:after {
     content: "";
