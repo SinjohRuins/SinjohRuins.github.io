@@ -54,13 +54,13 @@
             <p>This approach ensures our offset is always 0, simplifying time travel at the cost of requiring extra system memory formats.</p>
             <p>Example: 110 Day Bagon Skip</p>
             <ol type="1">
-                <li>Format system memory to 1/1/2008 at 00:00</li>
+                <li>Set system date/time 1/1/2008 at 00:00</li>
                 <li>Format system memory to 1/1/2008 at 00:00 (RTC offset is now 0 seconds)</li>
                 <li>Save in game. Time travel protections are now in effect for 24 hours, unless your previous save’s RTC offset was also 0</li>
-                <li>Format system memory to 1/3/2008 at 00:00</li>
+                <li>Set system date/time to 1/3/2008 at 00:00</li>
                 <li>Format system memory to 1/3/2008 at 00:00. At this point, time travel protections have worn off</li>
                 <li>Make sure the proper area(s) are in place in the Safari Zone and save</li>
-                <li>Format system memory to 4/22/2008 at 00:00</li>
+                <li>Set system date/time to 4/22/2008 at 00:00</li>
                 <li>Format system memory to 4/22/2008 at 00:00 (110 days traveled while RTC offset remains 0)</li>
                 <li>Go back in game and save to lock in the upgrades</li>
             </ol> 
@@ -68,7 +68,7 @@
             <p>This approach sets our offset to the amount of days we want to skip, cutting down the amount of system memory formats needed.</p>
             <p>Example: 110 Day Bagon Skip</p>
             <ol type="1">
-                <li>Format system memory to 1/1/2008 at 00:00</li>
+                <li>Set system date/time to 1/1/2008 at 00:00</li>
                 <li>Format system memory to 4/20/2008 at 00:00 (RTC offset is now 9504000 seconds, or 110 days)</li>
                 <li>Save in game. Time travel protections are now in effect for 24 hours, unless your previous save’s RTC offset was also 9504000</li>
                 <li>Format system memory to 8/8/2008 at 00:00. At this point, time travel protections have worn off</li>
