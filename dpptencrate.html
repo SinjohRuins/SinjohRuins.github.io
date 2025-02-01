@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In Pokémon Diamond, Pearl, and Platinum, many factors are taken into consideration when the game determines if it should generate a wild Pokémon encounter.">
+    <title>Sinjoh Ruins</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/ETCHY_Logo_Base_500.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="/index.html" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="/supporters.html" class="pure-menu-link">Sinjoh Supporters</a></li>
+                <li class="pure-menu-item"><a href="/battlehall.html" class="pure-menu-link">Battle Hall Fans</a></li>
+                <li class="pure-menu-item"><a href="/towerglitch.html" class="pure-menu-link">Battle Tower Glitch</a></li>
+                <li class="pure-menu-item menu-item-divided pure-menu-selected"><a href="/dpptencrate.html" class="pure-menu-link">DPPt Encounter Rate</a></li>
+                <li class="pure-menu-item"><a href="/dsitimetravel.html" class="pure-menu-link">DSi Time Travel</a></li>
+                <li class="pure-menu-item"><a href="/hatching.html" class="pure-menu-link">Egg Hatching</a></li>
+                <li class="pure-menu-item"><a href="/slots.html" class="pure-menu-link">JPN HGSS Slots</a></li>
+                <li class="pure-menu-item"><a href="/mountskip.html" class="pure-menu-link">Let's Go Mount Skips</a></li>
+                <li class="pure-menu-item"><a href="/timetravelpenalty.html" class="pure-menu-link">Time Travel Penalty</a></li>
+                <li class="pure-menu-item"><a href="/timerbug.html" class="pure-menu-link">Timer Bug</a></li>
+                <li class="pure-menu-item"><a href="/softboiled.html" class="pure-menu-link">Softboiled Glitch</a></li>
+                <li class="pure-menu-item"><a href="/platrival.html" class="pure-menu-link">Unused Plat Rival</a></li>
+                <li class="pure-menu-item"><a href="/weather.html" class="pure-menu-link">Weather</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <h1>Sinjoh Ruins</h1>
+            <h2>A Pokémon Research Site</h2>
+        </div>
+
+        <div class="content">
+            <h2 class="content-subhead">Diamond, Pearl, and Platinum Encounter Rate</h2>
+            <p>In Pokémon Diamond, Pearl, and Platinum, many factors are taken into consideration when the game determines if it should generate a wild Pokémon encounter. 
+            In order to generate an encounter, (both of) two randomly generated integers from 0–99 must be lower than their respective “encounter success rates” (ESRs), which correspond to percentage chances.</p>
+
+            <p>For instance, if the randomly generated numbers are 20 and 50, but the ESRs were 30 and 40, respectively, an encounter would not be generated because, although 20<30, 50>40. If, instead, the second value was 35, an encounter would be generated because both 20<30 and 35<40.</p>
+
+            <p>In this example, the game had an effective 12% chance of generating an encounter: the chance that both randomly generated numbers were lower than their respective ESRs was 30% × 40%.</p>
+
+            <p>When ESRs are modified, any would-be non-integer value is rounded down. For example, if White Smoke is active, the first ESR is halved; if the first ESR was 35, instead of performing further modifications on 17.5, the ESR becomes 17.</p>
+  
+            
+            <h3>First Encounter Success Rate</h3>
+            <p>The first ESR is derived from the location at which your character is currently (then modified, if necessary; see below). Typically, tall grass has an encounter rate of 30, while caves and surfing have an encounter rate of 10. Below are the base encounter rates for Diamond, Pearl, and Platinum for locations that deviate from this typicality:</p>
+            <h4>Diamond and Pearl Encounter Rates</h4>
+            <table class="pure-table">
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="pure-table-odd">
+                        <td>Great Marsh</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Great Marsh (Surfing)</td>
+                        <td>15</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>Lost Tower</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Mt Coronet (4F Floor 3, 5F, and 6F)</td>
+                        <td>15</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>Old Chateau</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Old Chateau (Gengar Room)</td>
+                        <td>15</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>Route 219, 220, 223, 226, 230 (Surfing)</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Snowpoint Temple (First Room)</td>
+                        <td>15</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>Solaceon Ruins (Dead End Rooms, B1F)</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Solaceon Ruins (Dead End Rooms, B2F)</td>
+                        <td>20</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>Solaceon Ruins (Dead End Rooms, B3F)</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Solaceon Ruins (Dead End Rooms, B4F)</td>
+                        <td>30</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>Turnback Cave</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Victory Road</td>
+                        <td>15</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h4>Platinum Encounter Rates</h4>
+            <table class="pure-table">
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Great Marsh</td>
+                        <td>35</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>Lost Tower</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Mt Coronet (4F Floor 3, 5F, and 6F)</td>
+                        <td>15</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>Old Chateau</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Route 227 and 228</td>
+                        <td>10</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>Snowpoint Temple</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Trophy Garden</td>
+                        <td>10</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>Turnback Cave</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Victory Road (Cave and Surfing)</td>
+                        <td>15</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>First ESR Modifiers, Abilities</h3>
+            <table class="pure-table">
+                <thead>
+                    <tr>
+                        <th>Ability</th>
+                        <th>Modifier</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>No Guard, Arena Trap, Illuminate</td>
+                        <td>x2</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>White Smoke, Quick Feet, Stench</td>
+                        <td>x0.5</td>
+                    </tr>
+                    <tr>
+                        <td>Sand Veil (In Sandstorm)</td>
+                        <td>x0.5</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>Snow Cloak (In Snow)</td>
+                        <td>x0.5</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>First ESR Modifiers, Flutes</h3>
+            <table class="pure-table">
+                <thead>
+                    <tr>
+                        <th>Flute</th>
+                        <th>Modifier</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>White</td>
+                        <td>x1.5</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>Black</td>
+                        <td>x0.5</td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>First ESR Modifiers, Held Items</h3>
+            <p>If the Pokémon in the first slot of the party is holding the Pure Incense or Cleanse Tag, the ESR will be multiplied by two-thirds.</p>
+            <h3>Low Encounter Rate Tiles</h3>
+            <p>Before calculating the second ESR, the game checks the number of combined steps and turns the player commits on tiles that can generate encounters. If this number is less than 8, the game generates a number between 0 and 99, then checks if the result is lower than 5. If it is greater than five, the game will not generate an encounter. If the result is lower than 5, or if you’ve taken 8 or more steps and turns on tiles that can generate encounters, the second ESR is calculated. This step/turn counter is reset when loading into an area.</p>
+
+            <h3>Second Encounter Success Rate</h3>
+            <p>The second ESR is always set to 40, then modified accordingly:</p>
+            <h3>Second ESR Modifiers, Long Grass and Bicycle</h3>
+            <p>If your character is in long grass or if your character is riding a bicycle, the second ESR is increased by 30.</p>
+            <h3>Second ESR Modifiers, Date</h3>
+            <p>If you are playing on one of the following dates, the second ESR is modified accordingly:</p>
+            <h4>Diamond and Pearl</h4>
+            <table class="pure-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Modifier</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>January 1 | March 21 | August 6, 9 | September 11 (JPN Only), 23</td>
+                        <td>-10</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>August 13, 14, 16 | November 3 | December 25, 31</td>
+                        <td>-5</td>
+                    </tr>
+                    <tr>
+                        <td>January 6, 11 | February 3, 11, 12 | March 3, 17, 25 | April 1, 25, 29 | May 3, 5, 8, 29 | June 2, 21 | July 4, 14, 24 | August 15, 28 | September 15, 20 | October 3, 12 ,30 | November 1, 11, 16 | December 6, 8, 23, 24</td>
+                        <td>+5</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>January 12 | July 7</td>
+                        <td>+10</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>Platinum</h4>
+            <table class="pure-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Modifier</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>January 1 | March 21 | September 23</td>
+                        <td>-10</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>April 26 | August 13, 14, 16 | November 3 | December 31</td>
+                        <td>-5</td>
+                    </tr>
+                    <tr>
+                        <td>January 11, 29 | February 3, 11 | March 3, 18 | April 1, 25, 29 | May 3, 5 | June 21 | July 18, 24 | August 15 | September 7, 12, 15, 20, 28 | October 5, 15, 30 | November 12, 21 | December 14, 23</td>
+                        <td>+5</td>
+                    </tr>
+                    <tr class="pure-table-odd">
+                        <td>January 12 | February 27 | July 7</td>
+                        <td>+10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer style="text-align: center">
+            <hr />
+            Support me on <a href="https://www.patreon.com/c/Etchy">Patreon</a> and <a href="https://youtube.com/etch">YouTube</a> ❤️
+            <hr />
+        </footer>
+    </div>
+</div>
+
+<script src="/js/ui.js"></script>
+
+</body>
+</html>
